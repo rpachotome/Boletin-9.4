@@ -9,9 +9,7 @@ public class Refactorizar {
         boolean esPrimo = false;
         int lonDigitos;
         int conDigitos = 0;
-        System.out.print("intoduzca el numero de digitos:");
-        Scanner dato= new Scanner (System.in);
-        lonDigitos=dato.nextInt();
+        lonDigitos = entradaDato();
         if (lonDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
@@ -61,6 +59,14 @@ public class Refactorizar {
                 }
             }
         }
+    }
+
+    public static int entradaDato() {
+        int lonDigitos;
+        System.out.print("intoduzca el numero de digitos:");
+        Scanner dato = new Scanner(System.in);
+        lonDigitos = dato.nextInt();
+        return lonDigitos;
     }
 
 }
