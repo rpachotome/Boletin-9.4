@@ -1,17 +1,21 @@
 package refactorizar;
 
  // Lista los numeros primos de dos cifras
+import java.util.Scanner;
+
 public class Refactorizar {
 
     public static void main(String[] args) {
         boolean esPrimo = false;
-        int lonDigitos = 0;
+        int lonDigitos;
         int conDigitos = 0;
-        lonDigitos = 2;
+        System.out.print("intoduzca el numero de digitos:");
+        Scanner dato= new Scanner (System.in);
+        lonDigitos=dato.nextInt();
         if (lonDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
-        for (int i = 1; i <= 99999; i++) {
+        for (int i = 1; i <= 999999999; i++) {
             int divisionEntera = i;
 
             int contador = 0;
