@@ -10,6 +10,7 @@ public class Boletin074 {
     String b=com.pedirNombre1();
     double y=com.pedirPeso1();
     com.compara(x,y);
+    //porompompero
     }
     
 }
